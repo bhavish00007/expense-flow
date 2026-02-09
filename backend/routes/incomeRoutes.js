@@ -1,0 +1,24 @@
+const express = require('express');
+const router = express.Router();
+const {
+    getIncomes,
+    getIncome,
+    createIncome,
+    updateIncome,
+    deleteIncome
+} = require('../controllers/incomeController');
+const { protect } = require('../middleware/authMiddleware');
+
+// All routes are protected
+router.use(protect);
+
+router.route('/')
+    .get(getIncomes)
+    .post(createIncome);
+
+router.route('/:id')
+    .get(getIncome)
+    .put(updateIncome)
+    .delete(deleteIncome);
+
+module.exports = router;
