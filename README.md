@@ -11,4 +11,4 @@ A modern, beautiful, and feature-rich expense tracking application built with th
 - 📈 **Analytics** - Monthly trends and category breakdowns
 - 🎨 **Modern UI** - Stunning interface with Tailwind CSS
 - 📱 **Responsive Design** - Works perfectly on all devices
-- ⚡ **Real-time Updates** - Instant data synchronization,
+- ⚡ **Real-time Updates** - Instant data synchronization.
