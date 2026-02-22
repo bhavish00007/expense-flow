@@ -12,3 +12,7 @@ A modern, beautiful, and feature-rich expense tracking application built with th
 - 🎨 **Modern UI** - Stunning interface with Tailwind CSS
 - 📱 **Responsive Design** - Works perfectly on all devices
 - ⚡ **Real-time Updates** - Instant data synchronization.
+
+## Live Demo
+Frontend: https://expense-flow-sand.vercel.app  
+Backend: https://expense-backend-96w1.onrender.com
