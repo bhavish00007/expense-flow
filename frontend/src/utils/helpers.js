@@ -1,12 +1,12 @@
 import { format, parseISO } from 'date-fns';
 
-// Email validation
+
 export const validateEmail = (email) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(email);
 };
 
-// Format currency
+
 export const formatCurrency = (amount) => {
     return new Intl.NumberFormat('en-IN', {
         style: 'currency',
@@ -16,7 +16,7 @@ export const formatCurrency = (amount) => {
     }).format(amount);
 };
 
-// Format date
+
 export const formatDate = (date) => {
     if (!date) return '';
     try {
@@ -49,14 +49,13 @@ export const getInitials = (name) => {
         .slice(0, 2);
 };
 
-// Truncate text
 export const truncateText = (text, maxLength) => {
     if (!text) return '';
     if (text.length <= maxLength) return text;
     return text.substring(0, maxLength) + '...';
 };
 
-// Get category color
+
 export const getCategoryColor = (category, type = 'expense') => {
     const expenseColors = {
         Food: 'bg-orange-100 text-orange-700',
